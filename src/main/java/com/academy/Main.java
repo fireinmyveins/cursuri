@@ -10,13 +10,13 @@ public class Main {
     public static void main(String[] args) {
 //        Person person = new Person();
 
-        Student student = new Student("Ciungulescu",
-                "Alex",
-                 "poli",
-                188213,
-                1);
-
-        Student catalin = new Student("fara");
+//        Student student = new Student("Ciungulescu",
+//                "Alex",
+//                 "poli",
+//                188213,
+//                1);
+//
+//        Student catalin = new Student("fara");
 
 //        Student student = new Student();
 
