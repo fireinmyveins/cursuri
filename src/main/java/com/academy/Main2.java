@@ -9,12 +9,25 @@ public class Main2 {
 
     public static void main(String[] args) {
 
-        Person owner = new Person("alex",
+        int nr = 12;
+        if(nr % 2 == 0) {
+            System.out.println("par");
+        } else if(nr % 2 == 1) {
+            System.out.println("impar");
+        }
 
-                "vasile",
-                11111);
-        Vehicle vehicle = new
-                Vehicle(owner);
+
+
+
+
+
+
+//        Person owner = new Person("alex",
+//
+//                "vasile",
+//                11111);
+//        Vehicle vehicle = new
+//                Vehicle(owner);
 //
 //        Person cata = new Person("alin", "cata", 22222);
 //        Vehicle anotherVehicle = new Vehicle(cata);
