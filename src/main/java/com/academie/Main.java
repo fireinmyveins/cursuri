@@ -1,8 +1,6 @@
 package com.academie;
 
-import com.academie.contribuabili.Contribuabil;
-import com.academie.contribuabili.ContribuabilTest;
-import com.academie.contribuabili.Registru;
+import com.academie.contribuabili.*;
 
 /**
  * Se cere sa se dezvolte un program care sa tina evidenta veniturilor cetatenilor
@@ -41,13 +39,33 @@ public class Main {
         Contribuabil c1 = new ContribuabilTest();
         Contribuabil c2 = new ContribuabilTest();
         Contribuabil c3 = new ContribuabilTest();
-        System.out.println(c1.getId());
-        System.out.println(c2.getId());
-        System.out.println(c3.getId());
+
 
         Registru.REGISTRU.adaugaContribuabil(c1);
         Registru.REGISTRU.adaugaContribuabil(c2);
         Registru.REGISTRU.adaugaContribuabil(c3);
 
+        Contribuabil c4 = new ContribuabilTest();
+        Registru.REGISTRU.stergeContribuabil(c4);
+        Registru.REGISTRU.stergeContribuabil(c1);
+
+        PlatitorTaxe c5 = new PlatitorTaxe(RatieTaxa.CONSTRUCTII);
+        System.out.println(c5);
+        c5.declaraVenit(100);
+
+
+        System.out.println(c5.toString());
+
+        c5.platesteTaxa(50);
+
+        System.out.println(c5);
+
+        c5.platesteTaxa(6);
+
+        System.out.println(c5);
+
+
+        c5.platesteTaxa(-4554);
+        System.out.println(c5);
     }
 }
